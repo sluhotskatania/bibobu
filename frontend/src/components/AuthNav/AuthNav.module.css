@@ -1,0 +1,25 @@
+.flexContainer {
+  gap: 0.5rem;
+}
+
+.loginButton,
+.registerButton {
+  border-color: #ff4b2b;
+}
+
+.loginButton {
+  color: #ff4b2b;
+}
+.loginButton:hover {
+  background-color: #ff4b2b;
+  color: #fff;
+  border-color: #ff4b2b;
+}
+.registerButton {
+  background-color: #ff4b2b;
+}
+.registerButton:hover {
+  background-color: #fff;
+  color: #ff4b2b;
+  border-color: #ff4b2b;
+}

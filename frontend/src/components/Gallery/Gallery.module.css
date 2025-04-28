@@ -1,0 +1,43 @@
+.gallery img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery {
+  min-height: 400px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carouselInner {
+  position: relative;
+}
+
+.carouselItem img {
+  object-fit: cover;
+  height: 500px;
+}
+
+.carouselControl {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5%;
+  z-index: 10;
+}
+
+.carousel-control-prev {
+  left: -2%;
+}
+
+.carousel-control-next {
+  right: -2%;
+}

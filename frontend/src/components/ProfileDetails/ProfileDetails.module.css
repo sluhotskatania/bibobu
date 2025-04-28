@@ -1,0 +1,16 @@
+.profileDetails {
+  padding: 1rem;
+}
+
+.profileDetails h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.profileDetails p {
+  margin-bottom: 0.5rem;
+}
+
+.profileDetails .btn-outline-secondary {
+  margin-top: 1rem;
+}

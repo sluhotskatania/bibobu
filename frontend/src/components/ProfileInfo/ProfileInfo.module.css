@@ -1,0 +1,46 @@
+.profileImageWrapper {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  cursor: pointer;
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid #ff4b2b;
+  transition: opacity 0.3s ease;
+}
+
+.profileImageWrapper:hover .profileImage {
+  filter: grayscale(50%);
+}
+
+.changePhotoButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.profileImageWrapper:hover .changePhotoButton {
+  opacity: 1;
+}
+
+.btn-danger {
+  background-color: #ff4b2b;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #e04327;
+}

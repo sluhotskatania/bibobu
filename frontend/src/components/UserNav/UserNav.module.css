@@ -1,0 +1,29 @@
+.userNav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userName {
+  font-weight: bold;
+  color: #333;
+}
+
+.profileButton {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.profileButton:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.logoutButton {
+  background-color: #ff4b2b;
+  color: #fff;
+}
+
+.logoutButton:hover {
+  background-color: #e04327;
+}

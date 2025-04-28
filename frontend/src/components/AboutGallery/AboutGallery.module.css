@@ -1,0 +1,18 @@
+.gallerySection {
+  margin-top: 2rem;
+}
+
+.galleryTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.galleryImage {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galleryImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}

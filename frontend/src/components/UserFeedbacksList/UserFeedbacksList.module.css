@@ -1,0 +1,19 @@
+.feedbacksList {
+  margin-top: 2rem;
+}
+
+.feedbackItem {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.feedbackItem h5 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.feedbackItem p {
+  margin: 0.3rem 0;
+}
