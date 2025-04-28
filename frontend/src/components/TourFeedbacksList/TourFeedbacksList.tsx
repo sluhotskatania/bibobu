@@ -6,6 +6,7 @@ import { selectFeedbacks } from "../../redux/feedbacks/selectors";
 import { selectUsers } from "../../redux/users/selectors";
 import { AppDispatch } from "../../redux/store";
 import css from "./TourFeedbacksList.module.css";
+import { apiDomain } from "../../constants";
 
 type Props = {
   tourId: string;
@@ -46,7 +47,10 @@ export default function TourFeedbacksList({ tourId }: Props) {
           >
             <div className="d-flex align-items-center mb-2">
               <img
-                src={feedback.user?.photo || "/placeholder.jpg"}
+                src={
+                  apiDomain + feedback.user?.photo ||
+                  `${apiDomain}uploads/profiles/default-profile.png`
+                }
                 alt={feedback.user?.name || "Користувач"}
                 className={css.userPhoto}
               />

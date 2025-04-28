@@ -46,7 +46,8 @@ export default function ProfileInfo({ user, formData }: Props) {
       <div className={`position-relative mb-3 ${css.profileImageWrapper}`}>
         <img
           src={
-            user?.photo || `${apiDomain}uploads/profiles/default-profile.png`
+            apiDomain + user?.photo ||
+            `${apiDomain}uploads/profiles/default-profile.png`
           }
           alt="Фото профілю"
           className={`img-fluid rounded-circle mb-3 ${css.profileImage}`}
