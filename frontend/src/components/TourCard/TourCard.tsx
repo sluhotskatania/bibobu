@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { selectTourLikes } from "../../redux/likes/selectors";
 import { Tour } from "../../types";
 import css from "./TourCard.module.css";
+import { apiDomain } from "../../constants";
 
 type Props = {
   tour: Tour;
@@ -16,7 +17,7 @@ export default function TourCard({ tour }: Props) {
   return (
     <div className={`card shadow-sm h-100 ${css.card}`}>
       <img
-        src={tour.image}
+        src={apiDomain + tour.image}
         className={`card-img-top ${css.cardImage}`}
         alt={tour.title}
       />

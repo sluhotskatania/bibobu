@@ -17,6 +17,7 @@ import {
   selectPaymentsError,
 } from "../../redux/payments/selectors";
 import TourFeedbacksList from "../TourFeedbacksList/TourFeedbacksList";
+import { apiDomain } from "../../constants";
 
 type Props = {
   tour: Tour;
@@ -94,7 +95,7 @@ export default function TourDetails({ tour }: Props) {
     <div className="row">
       <div className="col-md-6">
         <img
-          src={tour.image || "/placeholder.jpg"}
+          src={apiDomain + tour.image}
           alt={tour.title}
           className="img-fluid rounded"
         />
