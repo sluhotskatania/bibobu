@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import { env } from '../utils/env.js';
 
 const db = mongoose.connection.useDb(env('MONGODB_DB'));
-const appDomain = env('APP_DOMAIN');
+// const appDomain = env('APP_DOMAIN');
 
 const userSchema = new mongoose.Schema(
   {
@@ -39,7 +39,7 @@ const userSchema = new mongoose.Schema(
     },
     photo: {
       type: String,
-      default: `${appDomain}/uploads/profiles/default-profile.png`,
+      default: '/uploads/profiles/default-profile.png',
     },
   },
   {
